@@ -1,6 +1,10 @@
 # VBiomech
 FE poroelastic solver
 
+## Main reference: 
+Castro, A. P. G., W. Wilson, J. M. Huyghe, K. Ito, and J. L. Alves. Intervertebral disc creep behavior assessment through an open source finite element solver. J. Biomech. 47:297–301, 2014.
+
+## Instructions:
 1. Please make sure that you have the Intel (R) Visual Fortran Redistributables installed on your computer. If not, please install them (Folder: Libraries).
 
 2. The program and the libraries are valid for 64-bit Windows computers. Please contact us if you need the 32-bit configuration. MacOS and Linux versions are not available.
@@ -21,5 +25,5 @@ Each file has a detailed explanation of its particularities.
 Please keep the sintax as "VBIO_xyz", being xyz your preferred filename.
 
 ## Contact:
- - andre.castro@sheffield.ac.uk
- - jlalves@dem.uminho.pt
+ - Andre Castro - andre.castro@sheffield.ac.uk
+ - Jose Luis Alves - jlalves@dem.uminho.pt
