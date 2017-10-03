@@ -1,0 +1,24 @@
+#-----------------------------------------------------------------------------
+# definition of fiber vectors for spatial volumes to be defined               
+#                                                                             
+# !Xmin Xmax Ymin Ymax Zmin Zmax vec(1) vec(2) vec(3)                         
+#                                                                             
+#-----------------------------------------------------------------------------
+# definition of fiber vectors for the ANNULUS of an IntervertebralDisc        
+#                                                                             
+# !IVD    keyword                                                             
+# !2      number of fibers for a given material point                         
+# !20     number of layers to be defined                                      
+# !23.2   alfa0                                                               
+# !46.6   alfa180                                                             
+# !0.5    radial reduction of mechanical properties                           
+# !0.5    circumferential reduction of mechanical properties                  
+# !                                                                           
+#-----------------------------------------------------------------------------
+IVD                                                                 
+2                        
+20                                           
+23.2                                                                  
+46.6                                                               
+0.15                             
+0.25  

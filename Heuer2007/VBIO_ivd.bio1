@@ -1,0 +1,52 @@
+500000             | NSTMAX   .Maximum number of steps                          
+50                 | IEQMAX   .Maximum number of implicit iterative steps       
+0.001              | CRIT     .Convergence Criterion ( critF+critP < CRIT )     
+0.1                | RSAFE    .Maximum increment for iterations ( >0.001 )      
+5.0                | dTIMEmax   .Maximum TIME increment                       
+                   |                                                           
+1                  | REPEAT     .number of executions of this "bio" file       
+                   | NEXTbio    .extension of the next "bio" file to be read   
+                   |                                                                 
+                   |                                                            
+================================================================================
+OUTPUT strategy of saving data (saving data once every N times)                 
+------------------------------+-------------------------------------------------
+0                  | Universal file                                             
+0                  | VTK file                                                   
+10                 | GID file                                                   
+                   |                                                            
+================================================================================
+TIME history of loading and muscle activation                                   
+------------------------------+-------------------------------------------------
+ 11      0.        0.       2 | BOUNDARYCONDITION      
+ 11   1200.        0.       2 | BOUNDARYCONDITION                                        
+------------------------------+-------------------------------------------------
+ 22      0.        0.       2 | BOUNDARYCONDITION                               
+ 22   1200.        0.       2 | BOUNDARYCONDITION                                        
+------------------------------+-------------------------------------------------
+ 33      0.        0.       2 | BOUNDARYCONDITION                               
+ 33   1200.        0.       2 | BOUNDARYCONDITION                                                                                                      
+------------------------------+-------------------------------------------------
+ 44      0.        0.       2 | BOUNDARYCONDITION                               
+ 44   1200.        0.       2 | BOUNDARYCONDITION                                        
+------------------------------+-------------------------------------------------
+ 55      0.        0.       2 | BOUNDARYCONDITION                               
+ 55   1200.        0.       2 | BOUNDARYCONDITION                                                                                                      
+------------------------------+-------------------------------------------------
+ 77      0.        0.       0 | BOUNDARYCONDITION                                                              
+ 77   1200.        0.       0 | BOUNDARYCONDITION                                        
+------------------------------+-------------------------------------------------
+ 88      0.        0.       0 | BOUNDARYCONDITION                               
+ 88   1200.        0.       0 | BOUNDARYCONDITION                                                                                                      
+------------------------------+-------------------------------------------------
+ 66      0.        0.       1 | BOUNDARYCONDITION
+ 66    300.       -1.37     1 | BOUNDARYCONDITION
+ 66   1200.       -1.37     1 | BOUNDARYCONDITION                       
+------------------------------+-------------------------------------------------
+125      0.        0.       0 | BOUNDARYCONDITION
+125   1200.        0.       0 | BOUNDARYCONDITION                     
+------------------------------+-------------------------------------------------
+- definition of the piecewise linear evolution functions of:                    
+- MUSCLE activation, 3 values (materialID, time, activation value)              
+- BOUNDARYCONDITION, time-evolution of BC, 4 values (BCID, time, BCval, NCRval) 
+================================================================================

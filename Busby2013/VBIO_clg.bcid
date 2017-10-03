@@ -1,0 +1,299 @@
+Parametric definition for V-Biomech V2.002                                      
+of BCIDs for each dof                                                           
+================================================================================
+11           |  BCID                       ( 1-99 )                             
+1            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           L    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0        -1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+20.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+22           |  BCID                       ( 1-99 )                             
+2            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           L    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0        -1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+20.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+33           |  BCID                       ( 1-99 )                             
+3            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           L    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0        -1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+20.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+44           |  BCID                       ( 1-99 )                             
+1            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           H    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0         1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+30.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+55           |  BCID                       ( 1-99 )                             
+2            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           H    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0         1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+30.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+66           |  BCID                       ( 1-99 )                             
+3            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           H    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0         1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+30.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+77           |  BCID                       ( 1-99 )                             
+1            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           H           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         1.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+77           |  BCID                       ( 1-99 )                             
+1            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           L           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0        -1.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+77           |  BCID                       ( 1-99 )                             
+1            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           H           M           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         1.0         0.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+77           |  BCID                       ( 1-99 )                             
+1            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           L           M           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0        -1.0         0.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+88           |  BCID                       ( 1-99 )                             
+2            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           H           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         1.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+88           |  BCID                       ( 1-99 )                             
+2            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           L           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0        -1.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+88           |  BCID                       ( 1-99 )                             
+2            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           H           M           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         1.0         0.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+88           |  BCID                       ( 1-99 )                             
+2            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           L           M           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0        -1.0         0.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                           
+================================================================================
+125          |  BCID                       ( 1-99 )                             
+4            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           H           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         1.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+125          |  BCID                       ( 1-99 )                             
+4            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           L           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0        -1.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+125          |  BCID                       ( 1-99 )                             
+4            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           H           M           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         1.0         0.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+125          |  BCID                       ( 1-99 )                             
+4            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           L           M           M    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0        -1.0         0.0         0.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+50.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error
+================================================================================
+126          |  BCID                       ( 1-99 )                             
+4            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           H    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0         1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+30.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+125          |  BCID                       ( 1-99 )                             
+4            |  Coordinate                 ( 1->"x";  2->"y";  3->"z";  4->all )
+B            |  Nodes pre-selection        ( A-> all nodes; B-> Boundary nodes )
+0            |  Material                   ( 0-> all matID; matID-> matID only )
+--------------------------------------------------------------------------------
+Seeding node | numNO,{x,y,z}         iNN           x           y           z    
+             |                         C           M           M           L    
+Normal       | @numNO,{nx,ny,nz}    @iNN          nx          ny          nz    
+             |                         0         0.0         0.0        -1.0    
+--------------------------------------------------------------------------------
+N            |  Check    (S or N - Seed or Normal)                              
+30.0         |  error    (S, [length units], N [degrees]                        
+A            |  A/R      (Absolute or Relative error                            
+================================================================================
+
+                                                                                
+a) BCID      - number of the BCID to be defined                                 
+                                                                                
+b) Seed node - number of the node around which                                  
+               boundary conditions BCID will be defined                         
+    iNN      - number of the node or the "C"losest to point {x,y,z}             
+                                                                                
+c)  {x,y,z}  - value, or                                                        
+             - "L"owest, "M"edium or "H"ighest for a given coordinate           
+                                                                                
+d) @iNN      - Normal at node iNN or the one defined in the input file          
+                                                                                
+                                                                                
+                                                                                
+                                                                                

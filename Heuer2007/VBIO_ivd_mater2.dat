@@ -1,0 +1,123 @@
+matID          | 2                                                            
+Name           | AF                                                    
+Desc           | AF               
+===============+==============================================================
+CMisotropic    | 1                                                            
+  N            | 1                                                            
+  Values       | 0.18   0.045                                                
+CManisotropic  | 10                                                            
+  N            | 2                                                            
+  Values       | 300.0        12.0     0.0    12.0  0.0   0.0   0.0   0.0        
+----------------                                                              
+bulkM          | 0.0
+----------------
+HPermeability  | 7.5e-4
+M (+)          | 8.5                                                       
+---------------- 
+Swelling       | 2
+  Fixed DePi   | 0.00
+  R            | 8.31450	    
+  T            | 298.0 	     
+  phi(i)       | 0.83
+  phi(e)       | 0.92
+  ce           | 0.00015
+  cf0          | 0.00018
+  nf0          | 0.7	                                                                   
+----------------                                                             
+Muscle         | 0                                                            
+  Sig0,Lamda0  |  0.3     1.0                                                 
+  fl model     | 10.0    -6.0                                                 
+  fv model     |  0.4     5.0     2.0     1.5   200.0                         
+----------------                                                              
+viscousSHORT   | 0                                                            
+  eta1         |  1.8888                                                      
+  eta2         | 15.0087                                                      
+----------------                                                              
+viscousLONG    | 0                                                            
+  N            | 3                                                            
+  aki(1-5)     | 1.7      1.2	2.0	6.0                                           
+  tki(1-5)     | 11.765   1.1   0.132	0.01                                          
+----------------                                                              
+Membrane       | 0                                                            
+  thickness    | 0.2                                                          
+  CMisotropic  | 1                                                            
+     N         | 1                                                            
+     Values    | 25.0  50.0                                                   
+  CManisotropic| 0                                                            
+     N         | 0.0                                                          
+     Values    | 0.0                                                                                                                 
+===============+==============================================================
+                                                                              
+                                                                              
+                                                                              
+REMARKS:                                                                      
+                                                                              
+a) units - are in MPa or dimensionless                                        
+                                                                              
+b) matID         -  Material number                                           
+                                                                              
+c) CMisotropic   -  Isotropic Constituive Model                               
+     CM = 1      -  Mooney-Rivlin,  ={1,2,3,4,5}, with NumParas={2,5,9,14,20}:
+       N= 1      -  C10 C01                                                   
+       N= 2      -  C10 C01 C20 C11 C02                                       
+       N= 3      -  C10 C01 C20 C11 C02 C30 C21 C12 C03                       
+       N= 4      -  C10 C01 C20 C11 C02 C30 C21 C12 C03 C40 C31 C22 C13 C04   
+       N= 5      -  C10 C01 C20 C11 C02 C30 C21 C12 C03 C40 C31 C22 C13 C04...
+                                                 ...C50 C41 C32 C23 C14 C05   
+                                                                              
+     CM = 2      -  Ogden,               N={1,2,..,10}, with NumParas={2*N}:  
+       N= 1      -  Miu1 Alfa1                                                
+       N= 2      -  Miu1 Alfa1 Miu2 Alfa2                                     
+       N= i      -  Miu1 Alfa1 Miu2 Alfa2... Miu(i-1) Alfa(i-1) Miu(i) Alfa(i)
+     CM = 3      -  Mod. Mooney-Rivlin,  N={1,2,3,4,5}, with NumParas={2*N}   
+       N= 1      -  C10 C01                                                   
+       N= 2      -  C10 C01 C20 C02                                           
+       N= i      -  C10 C01 C20 C02 ... Ci0 C0i                               
+                                                                              
+d) CManisotropic - ANIsotropic Constituive Model                              
+     CM = 10     - Holzapfel,           N={1,2}, with NumParam={3,7}          
+       N= 1      -  Kb K4 K5                                                  
+       N= 2      -  Kb K4 K5 K6 K7 K8 K9                                      
+     CM = 20     - Poly-convex,         N={1},   with NumParam={4}            
+       N= 1      -  kb k4 h4 n                                                
+     CM = 30     - Muscle fiber,        N={1},   with NumParam={4}            
+       N= 1      -  SigPas0 Lamda0 g1 g2                                      
+                                                                              
+e) bulkM         - Bulk modulus (if bulkM=0., bulkM is defined authomatically 
+     if CMiso = 1 (Mooney-Rivlin),      K= 1000 * [2(C10+C01)]                
+     if CMiso = 2 (Ogden),              K= 1000 * [0.5*(SUM(Alfai*Miui))])    
+                                                                              
+f) Muscle        - {1,0} for ON/OFF                                           
+     SigA0,Lamda0- Max. Isometric Stress (SigA0) which occurs at the optimum  
+                   fiber stretch (lamda0)                                     
+     fl model    - b1 b2                                                      
+     fv model    - k1 k2 k3 k4 k5                                             
+                                                                              
+g) viscousSHORT  - SHORT term Viscous Effects, {1,0} for ON/OFF               
+     eta1        - parameter                                                  
+     eta2        - parameter                                                  
+                                                                              
+h) viscousLONG   - LONG term Viscous Effects, {1,0} for ON/OFF                
+     ak1..ak5    - parameters of the     Prony series (order: ak1 ... ak5)    
+     tk1..tk5    - Characteristic times, Prony series (order: tk1 ... tk5)    
+                                                                              
+i) Membrane      - Activate a membrane generation/reading {0,1,2,3}           
+      0          - OFF                                                        
+      1          - ALL external boundary of the mesh of the current material  
+      2          - ONLY the external free boundary of the current mat FE mesh 
+      3          - from an external file                                      
+    thickness    - Thickness of the membrane to be considered around material 
+                                                                              
+    CMisotropic  - Isotropic Constitutive Model                               
+          = 1    -    Mooney-Rivlin,  ={1}, with NumParas={2}:                
+      if N= 1    -    C10 C01                                                 
+          = 2    -    Alves,          ={1}, with NumParas={2}:                
+      if N= 1    -    C1 C2                                                   
+                                                                              
+    CManisotropic- ANIsotropic Constitutive Model                             
+          = any  -    Not implemented                                         
+      if N= 1    -    Not implemented                                         
+                                                                              
+                                                                              
+                                                                              
+                                                                              
