@@ -25,5 +25,5 @@ Each file has a detailed explanation of its particularities.
 Please keep the sintax as "VBIO_xyz", being xyz your preferred filename.
 
 ## Contact:
- - Andre Castro - andre.castro@sheffield.ac.uk
+ - Andre Castro - andre.castro@sheffield.ac.uk or andre.castro@tecnico.ulisboa.pt (preferential)
  - Jose Luis Alves - jlalves@dem.uminho.pt
