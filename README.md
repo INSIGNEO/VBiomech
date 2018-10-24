@@ -1,8 +1,9 @@
 # VBiomech
 FE poroelastic solver
 
-## Main reference: 
-Castro, A. P. G., W. Wilson, J. M. Huyghe, K. Ito, and J. L. Alves. Intervertebral disc creep behavior assessment through an open source finite element solver. J. Biomech. 47:297–301, 2014.
+## Main references: 
+ - Castro, A.P.G., Yao, J., Battisti, T., Lacroix, D., 2018. Poroelastic Modeling of Highly Hydrated Collagen Hydrogels: Experimental Results vs. Numerical Simulation With Custom and Commercial Finite Element Solvers. Front. Bioeng. Biotechnol. https://doi.org/10.3389/fbioe.2018.00142
+ - Castro, A.P.G., Wilson, W., Huyghe, J.M., Ito, K., Alves, J.L., 2014. Intervertebral disc creep behavior assessment through an open source finite element solver. J. Biomech. 47, 297–301. https://doi.org/10.1016/j.jbiomech.2013.10.014
 
 ## Instructions:
 1. Please make sure that you have the Intel (R) Visual Fortran Redistributables installed on your computer. If not, please install them (Folder: Libraries).
